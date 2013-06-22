@@ -1,0 +1,19 @@
+/*  OPF entries for embedded fonts. DON'T FORGET TO CHECK THE PATH. */
+
+    <item id="cabin1" href="fonts/Cabin-Bold.ttf" media-type="application/x-font-ttf" />
+    <item id="cabin2" href="fonts/Cabin-Italic.ttf" media-type="application/x-font-ttf" />
+    <item id="cabin3" href="fonts/Cabin-BoldItalic.ttf" media-type="application/x-font-ttf" />
+    <item id="cabin4" href="fonts/Cabin-Regular.ttf" media-type="application/x-font-ttf" />
+
+    <item id="gandhi1" href="OEBPS/fonts/GandhiSans-Regular.ttf" media-type="application/x-font-ttf" />
+    <item id="gandhi2" href="OEBPS/fonts/GandhiSans-Italic.ttf" media-type="application/x-font-ttf" />
+    <item id="gandhi3" href="OEBPS/fonts/GandhiSans-Bold.ttf" media-type="application/x-font-ttf" />
+    <item id="gandhi4" href="OEBPS/fonts/GandhiSans-BoldItalic.ttf" media-type="application/x-font-ttf" />
+
+    <item id="roboto1" href="fonts/Roboto-Regular.ttf" media-type="application/x-font-ttf" />
+    <item id="roboto2" href="fonts/Roboto-Italic.ttf" media-type="application/x-font-ttf" />
+    <item id="roboto3" href="fonts/Roboto-Bold.ttf" media-type="application/x-font-ttf" />
+    <item id="roboto4" href="fonts/Roboto-BoldItalic.ttf" media-type="application/x-font-ttf" />
+
+    <item id="mano1" href="fonts/WCManoNegraBta.ttf" media-type="application/x-font-ttf" />
+    <item id="mano2" href="fonts/WCManoNegraBoldBta.ttf" media-type="application/x-font-ttf" />
