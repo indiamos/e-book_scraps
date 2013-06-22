@@ -1,0 +1,32 @@
+/* WTF?
+-------
+This is how I handle tall images in iBooks and Adobe RMSDK, which don't always scale to fit the height of the device screen or application window.
+
+This code was made possible by Liz Castro's post “Centering in ebooks across ereaders,” March 23, 2012 <http://www.pigsgourdsandwikis.com/2012/03/centering-in-ebooks-across-ereaders.html> */
+
+/* CSS stub: */
+
+.fig_50 {
+  text-align: center;
+	page-break-inside: avoid;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+
+/* HTML stub: */
+
+<div class="sfigs">
+    <div class="fig_50">
+      <img src="images/tall-narrow-image.jpg" alt="this is a pain in the ass" />
+    </div>
+  </div>
+
+/* Usage
+--------
+I usually end up setting a couple of scaling levels, from 40% to 90%, which I apply depending on the aspect ratio of each image. (I set up a file once to determine the best break points, but I got derailed and haven't finished that project.) If I have a lot of these to deal with, I set up a spreadsheet containing the width and height of each image, and I calculate the aspect ratio for each and sort on that. I then assign a scaling percentage to each range of ratios, and I use this data to RegEx together the HTML for each image so I can just cut and paste it in.
+
+This method does not work in Mobi7, but images automatically scale to fit the screen, there, anyway. Sometimes you don't *want* images to scale ot fit, though--as small ones will sometimes blow up all pixelly--so having a spreadsheet of image sizes also makes it much easier to identify affected images (again, I don't know the exact break point for this, but IIRC it's in Joshua Tallent's book) and merge together the HTML with explicit dimensions, to paste in.
+
+I do not put explicit dimensions on images *above* the necessary size for Mobi7 because in Adobe RMSDK, they'll scale unproportionally in some instances, and you get bizarre and nasty stretchy effects. */
