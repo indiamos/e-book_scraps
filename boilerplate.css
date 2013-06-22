@@ -1,0 +1,173 @@
+/* ! Most of the CSS that I put into most of the books I work on. */
+
+@page {
+     margin-top:30px;
+     margin-bottom:20px;
+}
+
+body {
+  font-weight: normal;
+	font-size: medium;
+	font-family: Charter, Georgia, serif;
+}
+
+.coverbody {
+	margin: 0;
+	text-align: center;
+}
+
+a {
+	color: #336699;
+	text-decoration: none;
+	-webkit-hyphens: none !important;
+	-moz-hyphens: none;
+	hyphens: none;
+	adobe-hyphenate: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+sub, sup {
+	position: relative;
+	vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+}
+
+sup.num {
+	vertical-align: 0.5em;
+	font-size: 0.6em;
+}
+
+sub.den {
+	vertical-align: -0.1em;
+	font-size: 0.6em;
+}
+
+/* !---------------------------DIVS---------------------------- */
+.fig, .figs, .sfig, .sfigs
+{
+	text-align: center;
+	page-break-inside: avoid;
+}
+
+.figs, .sfigs
+{
+	margin-bottom: 1em;
+}
+
+.sfig, .sfigs
+{
+	margin-top: 1em;
+}
+
+/* !---------------------------HEADINGS---------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	-webkit-hyphens: none !important;
+	-moz-hyphens: none;
+	hyphens: none;
+	adobe-hyphenate: none;
+	font-weight: bold;
+	font-style: normal;
+	page-break-inside: avoid;
+	page-break-after: avoid;
+}
+
+/* !---------------------------PARAGRAPHS---------------------------- */
+p {
+	margin: 0;
+	text-align: left;
+	text-indent: 0;
+	font-size: medium;
+	line-height: 1.5em;
+	orphans: 1;
+	widows: 2;
+	-webkit-hyphenate-before: 3;
+	hyphenate-before: 3;
+	-webkit-hyphenate-after: 3;
+	hyphenate-after: 3;
+	-webkit-hyphenate-lines: 2;
+	hyphenate-lines: 2;
+	-webkit-hyphenate-limit-lines: 2;
+}
+
+.tx {
+	text-indent: 1em;
+}
+
+/* !---------------------------------- LISTS ---------------------------------- */
+/* To fix that stupid Nook Color bug*/
+ol {
+	adobe-text-layout: optimizeSpeed;
+}
+
+ol, ul {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+li {
+	text-align: left;
+	font-size: medium;
+	font-family: Charter, Georgia, serif;
+	line-height: 1.5em;
+}
+
+/* !---------------------------SPANS---------------------------- */
+/* !---------------------------TABLES---------------------------- */
+table {
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: left;
+	font-size: small;
+}
+
+td, th {
+	padding: 3px;
+}
+
+td, th, .tdp, .thp {
+	font-size: small;
+}
+
+.tdtint {
+	background-color: #e6e6e6;
+}
+
+/* !---------------------------------- MEDIA QUERIES ---------------------------------- */
+@media not amzn-mobi {
+	hr {
+		display: none;
+	}
+	
+	span.hide {
+		display: none;
+	}
+}
+
+@media amzn-mobi {
+	
+}
+
+@media amzn-kf8 {
+body {
+       margin-right: 0;
+       margin-left: 0;
+     }
+}
+
+/* !===================== MISCELLANEOUS SNIPPETS ======================= */
+.roundcorners {
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+}
