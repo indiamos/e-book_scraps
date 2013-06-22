@@ -1,4 +1,20 @@
-/*  OPF entries for embedded fonts. DON'T FORGET TO CHECK THE PATH. */
+<!-- Metadata -->
+
+    <dc:title>Title</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="Beethoven, Ludwig von, Monroe, Marilyn">Ludwig von Beethoven and Marilyn Monroe</dc:creator>
+    <dc:subject>BISAC/Group/Category/</dc:subject>
+    <dc:description>Sometimes the subtitle; sometimes longer descriptive copy.</dc:description>
+    <dc:publisher>Publisher McPublisher &38; Co.</dc:publisher>
+    <dc:date opf:event="publication">2011</dc:date>
+    <dc:date opf:event="modification">2012-10-03</dc:date>
+<!-- I've stopped putting in mod dates, since they'll have to be dropped in EPUB3. -->
+    <dc:source>Title of the source book</dc:source>
+    <dc:source id="src-id">urn:isbn:9781000000000</dc:source>
+    <dc:rights>Copyright &#x00A9; 2013 by TK. All rights reserved.</dc:rights>
+    <dc:language>en-US</dc:language>
+    <dc:identifier id="bookid" opf:scheme="urn:isbn">9781000000001</dc:identifier>
+
+<!-- OPF entries for embedded fonts. MIND THE PATH. -->
 
     <item id="cabin1" href="fonts/Cabin-Bold.ttf" media-type="application/x-font-ttf" />
     <item id="cabin2" href="fonts/Cabin-Italic.ttf" media-type="application/x-font-ttf" />
@@ -17,3 +33,11 @@
 
     <item id="mano1" href="fonts/WCManoNegraBta.ttf" media-type="application/x-font-ttf" />
     <item id="mano2" href="fonts/WCManoNegraBoldBta.ttf" media-type="application/x-font-ttf" />
+
+<!-- Guide, for Apple and Amazon. I include no more and no less than these three points. MIND THE PATH.-->
+
+      <guide>
+        <reference type="cover" title="Cover" href="tk.html" />
+        <reference type="toc" title="Table of Contents" href="tk.html" />
+        <reference type="text" title="Start reading" href="tk.html" />
+      </guide>
